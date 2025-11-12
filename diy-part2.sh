@@ -8,5 +8,11 @@
 # Blog: https://p3terx.com
 #============================================================
 
+# Modify default theme
+sed -i 's/bootstrap/argon/1' feeds/luci/collections/luci-nginx/Makefile
+sed -i 's/bootstrap/argon/1' feeds/luci/collections/luci-light/Makefile
+sed -i 's/bootstrap/argon/1' feeds/luci/collections/luci-ssl-nginx/Makefile
+
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.15.101/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.15.102/g' package/base-files/files/bin/config_generate
+
